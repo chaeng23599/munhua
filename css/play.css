@@ -87,6 +87,16 @@ body {
     padding: 0 50px;
 }
 
+
+.gnb ul li {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.gnb ul li:hover{
+    color: #E42C01;
+}
+
 .main_inner {
     width: 1240px;
     margin: 0 auto;
@@ -152,8 +162,9 @@ body {
 }
 
 
-
-
+.hide {
+    display: none;
+}
 
 .border{
     content: '';
@@ -186,6 +197,9 @@ body {
     padding: 10px 20px;
 }
 
+.list ul li h3 {
+    font-size: 14px;
+}
 
 .list ul img {
     width: 280px;

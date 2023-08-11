@@ -6,8 +6,13 @@
     <title>문화포털</title>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <script src="../app.js"></script>
-    <script src="/script/jquery-1.12.4.js"></script>
+    <script src="../script/jquery-1.12.4.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.marquee.min.js"></script>
+    <script src="../js/app.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
@@ -29,17 +34,18 @@
         <div class="gnb">
             <ul>
                 <li><a href="#x">문화체험</a></li>
-                <li><a href="#x">문화공감</a></li>
+                <li><a href="./second.html">문화공감</a></li>
                 <li><a href="#x">문화지식</a></li>
                 <li><a href="#x">문화알리미</a></li>
             </ul>
         </div>
     </div>
+
     <div class="main">
         <div class="slider">
             <div class="slide">
-                <img src="../images/slide1.png" alt="">
-                <img src="../images/slide2.png" alt="">
+                <div class="first"><img src="../images/slide1.png" alt=""></div>
+                <div><img src="../images/slide2.png" alt=""></div>
             </div>
             <div class="arrows">
                 <a href="#x"><img class="left" src="../images/left_arrow1.png" alt=""></a>
@@ -70,7 +76,7 @@
                 </li>
                 <li class="ico_calen">
                     <img src="../images/icon_8.png" alt="">
-                        <p>문화 <br>캘린더</p>
+                    <p>문화 <br>캘린더</p>
                 </li>
             </ul>
         </section>
@@ -183,21 +189,24 @@
                         <ul class="down">
                             <li>
                                 <h4>공감마당</h4>
-                                <p>공감리포트</p>
-                                <p>공감리포트</p>
-                                <p>공감리포트</p>
+                                <p>• 공감리포트</p>
+                                <p>• 카드뉴스</p>
+                                <p>• 문화마루</p>
                             </li>
                             <li>
                                 <h4>예술용어사전</h4>
+                                <p>가나다 순으로 <br>찾으시는 문화관련 <br>예술용어를 찾아보세요.</p>
                             </li>
                         </ul>
                     </span>
                     <div class="top_3">
+                        <div class="top"></div>
+                        <div class="btm">
+                            <ul>
+                                <li><a href="#x">공연장</a></li>
+                            </ul>
+                        </div>
                         <h3>문화공간 • 단체</h3>
-                        <ul>
-                            <li>공연장</li>
-                            <li>공연장</li>
-                        </ul>
                     </div>
                 </div>
                 <div class="btm"></div>
@@ -206,27 +215,38 @@
         <div class="scroll">
             <a href="#x" class="scroll_btn">TOP</a>
         </div>
-        <div class="footer">
-            <div class="link"></div>
-            <div class="down">
-                <div class="img">
-                    <img src="../images/footer_link01.png" alt="">
-                    <img src="../images/footer_link02.png" alt="">
-                </div>
-                <p>대표전화 1688-2220/ 이메일 culture@kctsa.kr</p>
-                <p>서울시 마포구 월드컵북로 400, 6층-8층</p>
-                <p>COPYRIGHT © 한국문화정보원</p>
-                <div class="sns">
-                    <img src="../images/ico_footer_blog_02.png" alt="">
-                    <img src="../images/ico_footer_instagram.png" alt="">
-                    <img src="../images/ico_footer_navertv.png" alt="">
-                    <img src="../images/ico_footer_youtube.png" alt="">
+        
+        <section class="footer_section">
+            <div class="footer">
+                <div class="link"></div>
+                <div class="down">
+                    <div class="box">
+                        <div class="img">
+                            <img src="../images/footer_link01.png" alt="">
+                            <img src="../images/footer_link02.png" alt="">
+                        </div>
+                        <p>대표전화 1688-2220 / 이메일 culture@kctsa.kr</p>
+                        <p>서울시 마포구 월드컵북로 400, 6층-8층</p>
+                        <p>COPYRIGHT © 한국문화정보원</p>
+                    </div>
+                    <div class="sns">
+                        <img src="../images/ico_footer_blog_02.png" alt="">
+                        <img src="../images/ico_footer_instagram.png" alt="">
+                        <img src="../images/ico_footer_navertv.png" alt="">
+                        <img src="../images/ico_footer_youtube.png" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
     
+    <script>
+        $(document).ready(function(){
+            $('.slide').slick({
+                
+            })
+        })
+    </script>
     
-
 </body>
 </html>

@@ -7,12 +7,12 @@
     //      })
     //  },3000)
 
-    $('.slide').slick({
-        dots:false,
-        nextArrow:$('.right'),
-        prevArrow:$('.left'),
-        autoplay:true,
-        autoplaySpeed: 5000,
-    });
+    // $('.slide div').slick({
+    //     dots:true,
+    //     nextArrow:$('.right'),
+    //     prevArrow:$('.left'),
+    //     autoplay:true,
+    //     autoplaySpeed: 5000,
+    // });
 
 
