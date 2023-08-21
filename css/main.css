@@ -110,11 +110,19 @@ body {
     overflow: hidden;
 }
 
-.slide .first {
+.slide .first{
     background-color: #f3ebe0;
 }
 
-.slide div {
+.slide .second {
+    background-color: rgb(153, 191, 230);
+}
+
+.slide .third {
+    background-color: rgb(255, 255, 233);
+}
+
+.slide li img{
     margin: 0 auto;
     width: 1270px;
     height: 556px;
@@ -137,7 +145,7 @@ body {
     margin: 0 auto;
 }
 
-.service_section h2, .service_section p{
+.service_section p{
     text-align: center;
     padding-top: 20px;
 }
@@ -145,6 +153,8 @@ body {
 .service_section h2 {
     font-size: 26px;
     padding-top: 50px;
+    margin-top: 80px;
+    text-align: center;
 }
 
 .service_section .service {
@@ -197,7 +207,7 @@ body {
     content: '';
     display: block;
     position: absolute;
-    top: 1090px;
+    top: 1179px;
     width: 100%;
     border-bottom: 1px solid #ddd;
     padding-top: 20px;

@@ -43,15 +43,23 @@
 
     <div class="main">
         <div class="slider">
-            <div class="slide">
-                <div class="first"><img src="../images/slide1.png" alt=""></div>
-                <div><img src="../images/slide2.png" alt=""></div>
-            </div>
+            <ul class="slide">
+                <li class="first">
+                    <img src="../images/slide1.png" alt="">
+                </li>
+                <li class="second">
+                    <img src="../images/slide2.png" alt="">
+                </li>
+                <li class="third">
+                    <img src="../images/slide4.png" alt="">
+                </li>
+            </ul>
             <div class="arrows">
                 <a href="#x"><img class="left" src="../images/left_arrow1.png" alt=""></a>
                 <a href="#x"><img class="right" src="../images/right_arrow1.png" alt=""></a>
             </div>
         </div>
+
         <section class="service_section">
             <h2>주요서비스</h2>
             <p>문화포털의 주요서비스를 바로 만나보세요!</p>
@@ -80,7 +88,9 @@
                 </li>
             </ul>
         </section>
+
         <div class="border"></div>
+
         <div class="contents">
             <h2>내 주변 문화 콘텐츠</h2> 
             <ul>
@@ -140,6 +150,7 @@
                 </li>
             </ul>
         </div>
+        
         <div class="box2">
             <div class="special">
                 <h2>특화 콘텐츠</h2>
@@ -250,7 +261,10 @@
     <script>
         $(document).ready(function(){
             $('.slide').slick({
-                
+                nextArrow:$('.right'),
+                prevArrow:$('.left'),
+                autoplay:true,
+                autoplaySpeed: 5000,
             })
         })
     </script>
